@@ -3,55 +3,36 @@ import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
   final AudioCache player = AudioCache();
-  final List<Map> sounds = [
-    {
-      'file': 'note1.wav',
-      'color': Colors.redAccent,
-    },
-    {
-      'file': 'note2.wav',
-      'color': Colors.orangeAccent,
-    },
-    {
-      'file': 'note3.wav',
-      'color': Colors.yellowAccent,
-    },
-    {
-      'file': 'note4.wav',
-      'color': Colors.lightGreen,
-    },
-    {
-      'file': 'note5.wav',
-      'color': Colors.green,
-    },
-    {
-      'file': 'note6.wav',
-      'color': Colors.blueAccent,
-    },
-    {
-      'file': 'note7.wav',
-      'color': Colors.deepPurpleAccent,
-    },
-  ];
+
+  Expanded createList({
+    Color color,
+    int soundNumber,
+  }) {
+    return Expanded(
+      child: FlatButton(
+        color: color,
+        onPressed: () {
+          this.player.play('note$soundNumber.wat');
+        },
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: SafeArea(
-        child: ListView.builder(
-          itemCount: this.sounds.length,
-          itemBuilder: (context, index) {
-            return Container(
-              height: height / this.sounds.length,
-              child: FlatButton(
-                color: this.sounds[index]['color'],
-                onPressed: () {
-                  this.player.play(this.sounds[index]['file']);
-                },
-              ),
-            );
-          },
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            this.createList(color: Colors.red, soundNumber: 1),
+            this.createList(color: Colors.orange, soundNumber: 2),
+            this.createList(color: Colors.yellow, soundNumber: 3),
+            this.createList(color: Colors.lightGreen, soundNumber: 4),
+            this.createList(color: Colors.green, soundNumber: 5),
+            this.createList(color: Colors.blue, soundNumber: 6),
+            this.createList(color: Colors.purple, soundNumber: 7),
+          ],
         ),
       ),
     );
