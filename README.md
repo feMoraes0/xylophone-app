@@ -1,16 +1,33 @@
-# xylophoneapp
+<h1 align="center">Xylophone App</h1>
 
-App #3 - Udemy course created by Dr. Angela Yu
+<p align="center">
+  <img width="200" src="print.project.screen"/>
+</p>
 
-## Getting Started
+## What I learned?
+ - `Packages`: how to use it, versions and why use packages. The course presents the way to include packages in your project and what are the benefits to use packages to do not waste your time creating functionalities that other developer made before and how to be safe of future updates which may broke your app.
 
-This project is a starting point for a Flutter application.
+## How to use
 
-A few resources to get you started if this is your first Flutter project:
+To clone and run this application, you'll need [Git](https://git-scm.com/downloads) and [Flutter](https://flutter.dev/docs/get-started/install) installed on your computer. From your command line:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```
+# Clone this repository
+$ git clone {repository.git}
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Go into the repository
+$ cd {repository-name}
+
+# Install dependencies
+$ flutter packages get
+
+# Run the app
+$ flutter run
+```
+
+## Credits
+>Links, images, videos used to help.
+
+## Contact
+  - <a target="_blank" href="https://www.linkedin.com/in/fernando-moraes-48a26916a/">LinkedIn</a>
+  - <a target="_blank" href="mailto:fernandomoraes.lopes@gmail.com">E-mail</a>
