@@ -1,7 +1,7 @@
 <h1 align="center">Xylophone App</h1>
 
 <p align="center">
-  <img width="200" src="prints/print-001.png"/>
+  <img width="350" src="prints/print-001.png"/>
 </p>
 
 ## What I learned?
